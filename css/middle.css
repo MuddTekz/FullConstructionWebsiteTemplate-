@@ -1,0 +1,105 @@
+.middleContainer {
+    width: 100%;
+    z-index: 2;
+    background-color: rgb(255, 255, 255);
+}
+
+.topImages{
+    display: inline-block;
+
+}
+#aboutimgleft {
+    float:left;
+    margin-left:30px;
+} 
+
+#aboutimgcenter {
+    margin: 0 auto;
+}
+#aboutimgright {
+    position:absolute;
+    top:104vh;
+    right:97px;
+} 
+.topSection {
+    z-index: 2;
+
+}
+
+.logo2 {
+    margin-left: 250px;
+}
+
+.TextInnerBelow {
+    width: 60%;
+}
+
+.TextInnerLeft{
+    float: left;
+    width: 50%;
+}
+
+.TextInnerRight{
+    float: right;
+    width: 50%;
+}
+
+.Text {
+    border-width: thin;
+    border-style: solid; /* Add this */
+    border-color: red;
+    border-radius: 10px;
+    padding: 15px;
+    margin-left: 110px;
+    width: 80%;
+    height: 100vh;
+    text-align: left;
+    background-color: rgba(189, 189, 189, 0.871);
+}
+
+.Text h1 {
+    font-family: 'Proxima Nova', Georgia, sans-serif;
+}
+
+.Text p {
+    font-size: 1.2rem;
+    font-family: 'Proxima Nova', Georgia, sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    #aboutimgleft {
+        display: none;
+    }
+    #aboutimgright {
+        display: none;
+    }
+    #aboutimgcenter {
+        display: none;
+    }
+    .logo2 {
+        float: left;
+        margin-left: 115px;
+        width: 300px;
+    }
+    .btn{
+        margin-top: -50px;
+        right: 0%;
+        position: absolute;
+    }
+    .Text {
+        margin-top: 20px;
+        margin-left: 20px;
+        width: 90%;
+        text-align: left;
+    }
+
+    .Text h1 {
+        font-size: 1.5rem;
+        font-family: 'Proxima Nova', Georgia, sans-serif;
+    }
+    
+    .Text p {
+        font-size: 0.8rem;
+        font-family: 'Proxima Nova', Georgia, sans-serif;
+    }
+}
