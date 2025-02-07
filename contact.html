@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRAGON Construction</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/middle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/ConstructionWebsiteTemplate/proxima-nova-web-fonts-master/fonts/fonts.css">
+</head>
+<body>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("nav-links");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">
+        <img draggable="false" src="logo.png" alt="Dragon Logo">
+        <span class="span1">DRAGON</span><span class="span2">construction</span>
+    </div>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+        <li><a href="ourservice.html"><i class="fa-solid fa-person-digging"></i>Our Work</a></li>
+        <li><a href="contact.html"><i class="fa-solid fa-phone"></i>Contact Us</a></li>
+    </ul>
+    <a href="javascript:void(0);" class="hamburger" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</nav>
+
+<section class="contact-section">
+      <!-- Title Box -->
+  <div class="title-box">
+    ‘Large enough to cope, small enough to care’
+</div>
+    <h2>Contact Us</h2>
+    <p>Have a question or need a quote? Get in touch with us!</p>
+
+    <div class="contact-container">
+        <!-- Contact Form -->
+        <form action="process_contact.php" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="name"><i class="fa-solid fa-signature"></i>Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email"><i class="fa-solid fa-envelope-circle-check"></i>Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address"><i class="fa-solid fa-address-book"></i>Address</label>
+                <input type="text" id="address" name="address" placeholder="Your Address">
+            </div>
+
+            <div class="form-group">
+                <label for="enquiry"><i class="fa-solid fa-ruler-combined"></i>Enquiry</label>
+                <textarea id="enquiry" name="enquiry" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn"><i class="fa-solid fa-envelope-open"></i>Send Message</button>
+        </form>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <h3>Our Contact Details</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Unit 1, The Old Stone Yard, Canton, Cardiff, CF11 6HE</p>
+            <p><i class="fas fa-phone"></i> 02920 371341</p>
+            <p><i class="fas fa-mobile-alt"></i> 07812 524338</p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:info@dragon.construction">info@dragon.construction</a></p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section Styles -->
+<style>
+
+    /* Title Box */
+.title-box {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #c40000;
+    border: 2px solid #c40000;
+    padding: 10px;
+    max-width: 500px;
+    margin: 20px auto;
+    border-radius: 5px;
+    background: #f8f8f8;
+}
+.contact-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f8f8f8;
+}
+
+.contact-section h2 {
+    font-size: 28px;
+    color: #c40000;
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Contact Form */
+.contact-form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 450px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    width: 100%;
+    background: #c40000;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: #900000;
+}
+
+/* Contact Info */
+.contact-info {
+    background: #c40000;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: left;
+}
+
+.contact-info h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form,
+    .contact-info {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+</style>
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-content">
+        <p><i class="fas fa-map-marker-alt"></i> Unit 1, The Old Stone Yard, Canton, Cardiff, CF11 6HE</p>
+        <p><i class="fas fa-phone"></i> 02920 371341 | <i class="fas fa-mobile-alt"></i> 07812 524338</p>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:info@dragon.construction">info@dragon.construction</a></p>
+    </div>
+</footer>
+
+<!-- Footer Styles -->
+<style>
+.footer {
+    margin-top: 40px;
+    background: #c40000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    max-width: 600px;
+    margin: auto;
+}
+
+.footer p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.footer i {
+    font-size: 18px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .footer p {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+</style>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRAGON Construction</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/ConstructionWebsiteTemplate/proxima-nova-web-fonts-master/fonts/fonts.css">
+</head>
+<body>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("nav-links");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">
+        <img draggable="false" src="logo.png" alt="Dragon Logo">
+        <span class="span1">DRAGON</span><span class="span2">construction</span>
+    </div>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+        <li><a href="ourservice.html"><i class="fa-solid fa-person-digging"></i>Our Work</a></li>
+        <li><a href="contact.html"><i class="fa-solid fa-phone"></i>Contact Us</a></li>
+    </ul>
+    <a href="javascript:void(0);" class="hamburger" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</nav>
+
+<!-- Work Display Section -->
+<section class="work-section">
+    <!-- Title Box -->
+    <div class="title-box">
+        Refurbs, Extensions, Lofts, Brick Work
+    </div>
+
+    <h2>Our Work</h2>
+    <div class="work-container">
+        <!-- Row 1 -->
+        <div class="work-card">
+            <img src="http://www.dragon.construction/_resources/files/portfolio/heathway1/photo-2020-02-10-15-45-22.jpg" alt="Work 1">
+            <h3>Heathway</h3>
+            <p>WorkDone:.</p>
+        </div>
+        <div class="work-card">
+            <img src="http://www.dragon.construction/_resources/files/portfolio/cyncoed-rd/photo-2020-02-10-15-45-23-1.jpg" alt="Work 2">
+            <h3>Cyncoed Rd</h3>
+            <p>WorkDone:</p>
+        </div>
+        <div class="work-card">
+            <img src="http://www.dragon.construction/_resources/files/portfolio/whitchurch/dscf0822.jpg" alt="Work 3">
+            <h3>Whitchurch</h3>
+            <p>WorkDone:</p>
+        </div>
+        <div class="work-card">
+            <img src="http://www.dragon.construction/_resources/files/portfolio/greggs/5.jpg" alt="Work 4">
+            <h3>Greggs</h3>
+            <p>WorkDone:</p>
+        </div>
+
+
+
+
+        <!-- Row 2 -->
+        <div class="work-card">
+            <img src="http://www.dragon.construction/_resources/files/portfolio/fairwater-road/031-2.jpg" alt="Work 5">
+            <h3>Fairwater Road</h3>
+            <p>WorkDone:</p>
+        </div>
+        <div class="work-card">
+            <img src="http://www.dragon.construction/_resources/files/portfolio/abertillery-2013/10556477_270608309812342_4683221065915980175_n.jpg" alt="Work 6">
+            <h3>Abertillery 2013</h3>
+            <p>WorkDone:</p>
+        </div>
+        <div class="work-card">
+            <img src="http://www.dragon.construction/_resources/files/portfolio/pen-y-lan-loft-conversion/img_0624.jpg" alt="Work 7">
+            <h3>Pen-y-Lan Loft Conversion</h3>
+            <p>WorkDone:</p>
+        </div>
+        <div class="work-card">
+            <img src="http://www.dragon.construction/_resources/files/portfolio/usk-way-newport/10516705_270574073149099_1758665420899757361_n.jpg" alt="Work 8">
+            <h3>Usk Way, Newport</h3>
+            <p>WorkDone:</p>
+        </div>
+    </div>
+    <br>
+    <div class="title-box">
+        Contact Us Now!
+    </div>
+</section>
+
+<!-- Work Section Styles -->
+<style>
+/* Title Box */
+.title-box {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #c40000;
+    border: 2px solid #c40000;
+    padding: 10px;
+    max-width: 500px;
+    margin: 20px auto;
+    border-radius: 5px;
+    background: white;
+}
+
+/* Work Section */
+.work-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f8f8f8;
+}
+
+.work-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #c40000;
+}
+
+.work-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.work-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    outline: #c40000;
+    box-shadow: 0 4px 4px rgba(255, 0, 0, 0.814);
+    transition: transform 0.3s ease-in-out;
+}
+
+.work-card img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.work-card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.work-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.work-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .work-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .work-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .title-box {
+        font-size: 18px;
+        padding: 8px;
+    }
+}
+</style>
+
+
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-content">
+        <p><i class="fas fa-map-marker-alt"></i> Unit 1, The Old Stone Yard, Canton, Cardiff, CF11 6HE</p>
+        <p><i class="fas fa-phone"></i> 02920 371341 | <i class="fas fa-mobile-alt"></i> 07812 524338</p>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:info@dragon.construction">info@dragon.construction</a></p>
+    </div>
+</footer>
+
+<!-- Footer Styles -->
+<style>
+.footer {
+    margin-top: 40px;
+    background: #c40000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    max-width: 600px;
+    margin: auto;
+}
+
+.footer p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.footer i {
+    font-size: 18px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .footer p {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+</style>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
